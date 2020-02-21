@@ -37,7 +37,7 @@ public class Palindrome {
         if( gInput.equals(reverse)){
          System.out.println(gInput + " is a palindrome");
         } else{
-            System.out.println(gInput + " is not a palindrome");
+            System.out.println(gInput + " is not a palindrome or you input a Upper case character");
         }
        
 
