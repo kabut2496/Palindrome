@@ -15,15 +15,18 @@ public class Palindrome {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        //veriables 
         String gInput;
         String reverse = ""; 
-
+//getting user input
        gInput = JOptionPane.showInputDialog("Please enter a word to see if it is a Palindrome \ndo not enter any uper case letters or punctuation");
        
-
-        
-        for(int i = gInput.length() - 1; i >= 0; i--)
+//the try catch is looking for common punctuation 
+       try{
+           if( gInput.contains(".") || gInput.contains("?") || gInput.contains("!")|| gInput.contains(":") ){
+              throw new Exception ();
+           }else{
+                for(int i = gInput.length() - 1; i >= 0; i--)
         {
             reverse = reverse + gInput.charAt(i);
         }
@@ -38,6 +41,12 @@ public class Palindrome {
         }
        
 
+           }
+       }catch (Exception e){
+           System.out.println("pleas do not input any punctuation or capidle letters");
+       }
+        
+       
     }
     
 }
