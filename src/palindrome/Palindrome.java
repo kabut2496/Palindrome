@@ -44,7 +44,7 @@ gInput=gInput.toLowerCase();
 
            }
        }catch (Exception e){
-           System.out.println("pleas do not input any punctuation or capidle letters");
+           System.out.println("pleas do not input any punctuation or leave the input sapace blank");
        }
         
        
