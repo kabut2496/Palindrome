@@ -19,8 +19,9 @@ public class Palindrome {
         String gInput;
         String reverse = ""; 
 //getting user input
-       gInput = JOptionPane.showInputDialog("Please enter a word to see if it is a Palindrome \ndo not enter any uper case letters or punctuation");
-       
+       gInput = JOptionPane.showInputDialog("Please enter a word to see if it is a Palindrome \nPlease do not enter any punctuation");
+// converting to all lower case letters
+gInput=gInput.toLowerCase();
 //the try catch is looking for common punctuation 
        try{
            if( gInput.contains(".") || gInput.contains("?") || gInput.contains("!")|| gInput.contains(":") ){
